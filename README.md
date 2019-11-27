@@ -57,4 +57,7 @@ In the given Link, in the less secure App section, turn it on.
 ## List Of Hosts
 ![GitHub Logo](/images/list-of-host.png)
 
-
+## SMS screenshot:
+![GitHub Logo](/images/msg_screenshot.jpeg)
+## Email Screenshot:
+![GitHub Logo](/images/gmail.png)
