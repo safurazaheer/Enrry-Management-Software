@@ -55,7 +55,7 @@ In the given Link, in the less secure App section, turn it on.
 ## Host Form
 ![GitHub Logo](/images/Create_host.png)
 ## List Of Hosts
-![GitHub Logo](/images/list-of-host.png)
+![GitHub Logo](/images/listhost.png)
 
 ## SMS screenshot:
 ![GitHub Logo](/images/msg_screenshot.jpeg)
