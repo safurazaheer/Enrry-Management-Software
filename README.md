@@ -48,3 +48,13 @@ EMAIL_HOST_USER = 'example@gmail.com'
 [Link](https://myaccount.google.com/security)
 In the given Link, in the less secure App section, turn it on.
 ![GitHub Logo](/images/Google.png)
+## Visitor Form
+![GitHub Logo](/images/Visitor_form.png)
+## List Of Visitors
+![GitHub Logo](/images/list_of_visitor.png)
+## Host Form
+![GitHub Logo](/images/Create_host.png)
+## List Of Hosts
+![GitHub Logo](/images/list-of-host.png)
+
+
