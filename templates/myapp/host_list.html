@@ -1,0 +1,28 @@
+{% extends 'home.html' %}
+{% block content %}
+
+
+<ul class="list-group">
+    <li ><h1 style="margin-left:12em;">List of Host</h1></li>
+</ul>
+  <table  border="1" style="padding: 15px; border-spacing: 5px;" class="table table-hover">
+                    <tr style="text-align:center;">
+                      <th scope="col">Name</th>
+                      <th scope="col">Email ID</th>
+                      <th scope="col">Contact No</th>
+                    </tr>
+
+                    {% for i in host %}
+                    <tr style="text-align:center;">
+                      <td>{{ i.host_name }}</td>
+                      <td>{{ i.email }}</td>
+                      <td>{{ i.phone_no }}</td>
+                    </tr>
+
+                    {% endfor %}
+  </table>
+
+
+
+
+{% endblock %}

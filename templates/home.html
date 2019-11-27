@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<link href="https://fonts.googleapis.com/css?family=Cinzel:900&display=swap" rel="stylesheet">  </head>
+  <body>
+    <nav class="navbar navbar-default techfont custom-navbar" style="font-family: 'Cinzel', serif;">
+             <div class="container">
+               <ul class="nav navbar-nav"
+                 <li><a class="navbar-brand bigbrand">Visit here</a></li>
+                 <li><a class="navbar-link" href="{% url 'myapp:visitor_form' %}"> <span class="glyphicon glyphicon-user"></span>For Visitors</a></li>
+               <li><a class="navbar-link" href="{% url 'myapp:visit_list' %}">List of Visitors</a></li>
+               </ul>
+               <ul class="nav navbar-nav navbar-right">
+                 {% if user.is_authenticated %}
+               <li>
+                <a href="{% url 'myapp:host_form' %}">For Host</a>
+             </li>
+             <li>
+              <a href="{% url 'myapp:host_list' %}">List Of Hosts</a>
+           </li>
+             <li>
+              <a href="{% url 'logout' %}">Logout</a>
+           </li>
+
+           {% else %}
+           <li>
+             <a class='nav navbar-right' href="{% url 'login' %}">
+               <span class="glyphicon glyphicon-user"></span>login here
+             </a>
+           </li>
+
+                 {% endif %}
+
+               </ul>
+             </div>
+           </nav>
+
+
+
+    <div class="container">
+      {% block content %}
+        <div class="jumbotron">
+          <p style='font-family: 'Cinzel', serif;'>Entry management software</p>
+          <h2>Problem Statement</h2>
+          <h3>Description</h3>
+          <p>We need an application, which can capture the Name, email address, phone no of the visitor and
+same information also needs to be captured for the host on the front end.
+At the back end, once the user enters the information in the form, the backend should store.</p>
+
+
+<h2>Solution:</h2>
+<p>We have created a single admin which can add Host, whenver any visitor comes to visit a host, he/she can choose the host whom they wants to meet. After the visitor fills the form, the host will recieve the email and sms regarding the details of the visitor.</p>
+        </div>
+        {% endblock %}
+    </div>
+  </body>
+</html>
